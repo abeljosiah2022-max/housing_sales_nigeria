@@ -1,0 +1,20 @@
+Title,Region,Region_Name,Region_Parent_Name,Price,Bedrooms,Bathrooms,Property_Size,Furnishing,Is_Boost
+2bdrm Apartment in Lekki Phase 1 for sale,"Lekki, Lekki Phase 1",Lekki Phase 1,Lekki,350000000.0,2,3,150,Semi-Furnished,enterprise
+5bdrm Duplex in Wuse 2 for sale,"Abuja (FCT), Wuse 2",Wuse 2,Abuja (FCT),1300000000.0,5,6,1200,Unfurnished,diamond
+4bdrm Duplex in Sangotedo for sale,"Ajah, Sangotedo",Sangotedo,Ajah,180000000.0,4,4,300,Unfurnished,enterprise
+4bdrm Duplex in Gaduwa for sale,"Abuja (FCT), Gaduwa",Gaduwa,Abuja (FCT),350000000.0,4,4,600,Semi-Furnished,vip
+4bdrm Duplex in Gbagada Lagos for sale,"Gbagada, Oworonshoki / Gbagada",Oworonshoki / Gbagada,Gbagada,300000000.0,4,5,150,Semi-Furnished,enterprise
+Furnished 4bdrm Duplex in Akobo for sale,"Ibadan, Akobo",Akobo,Ibadan,450000000.0,4,4,400,Furnished,enterprise
+8bdrm House in Ikate for sale,"Lekki, Ikate",Ikate,Lekki,1700000000.0,8,1,1000,Unfurnished,enterprise
+4bdrm Duplex in Opebi for sale,"Ikeja, Opebi",Opebi,Ikeja,550000000.0,4,1,1000,Unfurnished,enterprise
+8bdrm Duplex in Egbeda for sale,"Alimosho, Egbeda",Egbeda,Alimosho,500000000.0,8,1,500,Unfurnished,enterprise
+5bdrm House in Osapa london for sale,"Lekki, Osapa london",Osapa london,Lekki,1700000000.0,5,1,1000,Unfurnished,enterprise
+5bdrm Duplex in Airport Road / Oshodi for sale,"Oshodi, Airport Road / Oshodi",Airport Road / Oshodi,Oshodi,260000000.0,5,1,1000,Unfurnished,enterprise
+Mini Flat in Ethiope West for sale,"Delta State, Ethiope West",Ethiope West,Delta State,12000000.0,1,1,30,Unfurnished,False
+Furnished 4bdrm Duplex in Bodija for sale,"Ibadan, Bodija",Bodija,Ibadan,325000000.0,4,4,450,Furnished,enterprise
+Furnished 3bdrm Block of Flats in Akobo for sale,"Ibadan, Akobo",Akobo,Ibadan,120000000.0,3,3,300,Furnished,enterprise
+6bdrm Duplex in Ikeja GRA for sale,"Ikeja, Ikeja GRA",Ikeja GRA,Ikeja,2500000000.0,6,1,1000,Unfurnished,enterprise
+5bdrm Duplex in Chevron for sale,"Lekki, Chevron",Chevron,Lekki,300000000.0,5,5,300,Semi-Furnished,enterprise
+6bdrm Duplex in Ikate for sale,"Lekki, Ikate",Ikate,Lekki,1600000000.0,6,6,300,Semi-Furnished,enterprise
+3bdrm Apartment in Ikate for sale,"Lekki, Ikate",Ikate,Lekki,300000000.0,3,3,280,Semi-Furnished,enterprise
+"Furnished 6bdrm Bungalow in Suncity Estate, Galadimawa for sale","Abuja (FCT), Galadimawa",Galadimawa,Abuja (FCT),550000000.0,6,7,1200,Furnished,enterprise
