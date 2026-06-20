@@ -57,10 +57,17 @@ def display_kpi(filtered_df):
 
     with col2:
         average_price = filtered_df['Price'].mean() if len(filtered_df) > 0 else 0
-        st.metric('🏠 Average House Price', f'${average_price:,.2f}')
+        if average_price >= 1_000_000:
+            formatted_average = f"₦{int(average_price / 1_000_000)} M"
+        elif average_price >= 1_000:
+            formatted_average = f"₦{int(average_price / 1_000)} K"
+        else:
+            formatted_average = f"₦{int(average_price)}"
+
+        st.metric("🏠 Average House Price", formatted_average)
 
     with col3:
-        top_region = filtered_df['Region'].mode()[0] if len(filtered_df) > 0 else 0
+        top_region = filtered_df['Region_Parent_Name'].mode()[0] if len(filtered_df) > 0 else 0
         st.metric('🏡 Top Region', top_region)
 
     with col4:
@@ -77,7 +84,7 @@ def charts(filtered_df):
 
     with col1:
         st.subheader('Total Hosing By Regions')
-        region1 = filtered_df.groupby('Region')['Title'].count().sort_values(ascending=False)
+        region1 = filtered_df.groupby('Region_Parent_Name')['Title'].count().sort_values(ascending=False)
         fig1 = px.bar(
             x=region1.values,
             y=region1.index,
@@ -90,7 +97,7 @@ def charts(filtered_df):
 
     with col2:
         st.subheader('Average Price By Regions')
-        region2 = filtered_df.groupby('Region')['Price'].mean().sort_values(ascending=False)
+        region2 = filtered_df.groupby('Region_Parent_Name')['Price'].mean().sort_values(ascending=False)
         fig2 = px.bar(
             x=region2.values,
             y=region2.index,
@@ -133,7 +140,7 @@ def charts(filtered_df):
             xaxis_title="Property Size", 
             yaxis_title="Price"
         )
-        st.plotly_chart(fig4, use_container_width=True)
+        st.plotly_chart(fig4, width='stretch')
 
     col5, = st.columns(1)
 
@@ -144,7 +151,7 @@ def charts(filtered_df):
             x='Bedrooms',
             y='Price'
         )
-        st.plotly_chart(fig5, use_container_width=True)
+        st.plotly_chart(fig5, width='stretch')
     
     col6, col7 = st.columns(2)
     with col6:
